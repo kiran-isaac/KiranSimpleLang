@@ -1,30 +1,19 @@
 # Bask
-The language is basically a subset of C. It is not particularly interesting syntactically but it was a fantastic project to learn how to write compilers, and how to use LLVM. The language is named after basking sharks. I don't know why, I just picked a shark at random. Naming things is hard and sharks are cool
+Bask is a compiled, statically-typed systems language targeting the LLVM-14 backend. While syntactically a (loose) subset of C, the project serves as a deep dive into compiler architecture, Abstract Syntax Tree (AST) construction, and the mapping of high-level semantics to LLVM Intermediate Representation (IR).
 
-I dont have any plans to continue working on this project beyond adding a bit more to the standard library and finalizing string support and some other stuff. I am happy with what I have learned from this project and I am looking forward to my next compiler project!
+The name is a nod to the Basking shark, my favorite! 
 
 ## The language
-The language is kind of like c. I like to use c syntax highlighting for it. The supported and tested features are:
+Supported:
 - Declaration and assignment of integers, floats and boolean variables
 - Declaration and definition of functions, and declaration of external functions which can be linked to later
-- Arithmetic operations on integers and floats
-- Comparison operations on integers and floats
+- Operations on integers and floats
 - If statements
 - function calls
 - Recursion
-- Including files, which acts like header files in c
+- Including files
 
-Here are some example programs:
-
-Here is a simple program that adds two numbers:
-```c
-int main() {
-    int a = 5;
-    int b = 10;
-    int c = a + b;
-    return c;
-}
-```
+## Examples
 
 Here is a program that calculates the factorial of 15:
 ```c
