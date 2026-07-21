@@ -19,8 +19,6 @@ Here is a program that calculates the factorial of 15:
 ```c
 use "io.bsk";
 
-int no_body();
-
 int factorial(int n) {
   if (n == 0) {
     return 1;
